@@ -35,7 +35,7 @@ body {
 
 h2 {
 	font-family: 'ITCGrouch', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 5rem;
+	font-size: 7rem;
 	font-weight: bold;
 	padding: 2rem;
 	color: white;
@@ -48,6 +48,8 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	opacity: 0;
+	animation: fadeIn 1s ease forwards;
 }
 
 .countdown {
@@ -57,7 +59,6 @@ h2 {
 	color: white;
 }
 
-.day,
 .hour,
 .minute,
 .second {
@@ -65,26 +66,48 @@ h2 {
 }
 
 .logo {
-	height: 60vh;
+	height: 7vh;
+	bottom: 50px;
+	left: auto;
+	right: auto;
 	width: fit-content;
-	padding: 7rem;
+	position: absolute;
+	opacity: 0.5;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* Website Responsiveness */
 @media (max-width: 600px) {
-	#welcome-week {
-		zoom: 25%;
+	html,
+	body {
+		scale: 0.9;
+	}
+	.background2 {
+		display: none;
 	}
 }
 
 @media (min-width: 601px) and (max-width: 1300px) {
-	#dark-zone {
-		zoom: 50%;
+	html,
+	body {
+		scale: 0.95;
+	}
+	.background2 {
+		display: none;
 	}
 }
 
 @media (min-width: 1301px) {
-	#welcome-week {
-		zoom: 100%;
+	html,
+	body {
+		scale: 1;
 	}
 }
