@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(27, 28, 31);
+}
+
+.background {
+	opacity: 0.2;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.background2 {
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	transform: scaleX(-1);
+	left: auto;
+	right: 0;
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: bold;
+	padding: 2rem;
+	color: white;
+}
+
+.welcome-week {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.countdown {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	color: white;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+	font-size: 2rem;
+}
+
+.logo {
+	height: 60vh;
+	width: fit-content;
+	padding: 7rem;
+}
+
+/* Website Responsiveness */
+@media (max-width: 600px) {
+	#welcome-week {
+		zoom: 25%;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+	#dark-zone {
+		zoom: 50%;
+	}
+}
+
+@media (min-width: 1301px) {
+	#welcome-week {
+		zoom: 100%;
+	}
+}
