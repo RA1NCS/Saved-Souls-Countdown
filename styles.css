@@ -1,7 +1,15 @@
+@font-face {
+	font-family: 'ITCGrouch';
+	src: url('ITCGrouch.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 body {
@@ -26,7 +34,8 @@ body {
 }
 
 h2 {
-	font-size: 4rem;
+	font-family: 'ITCGrouch', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 5rem;
 	font-weight: bold;
 	padding: 2rem;
 	color: white;
@@ -38,6 +47,7 @@ h2 {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 }
 
 .countdown {
